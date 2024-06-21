@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+
+/* 기본 색상 변수에 담기 */
+/* html {
+    --color-texta: #1d1d1d;
+    --color-textb: #fff;
+} */
+/* 시스템 커서 안 보이게 숨기기 */
+/* body {
+    cursor: none;
+} */
+/* 커스텀 커서 스타일 정의해주기 */
+/* .cursor {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(20%);
+    background-size: cover;
+}
+
+.cursor-grow {
+    transform: scale(2);
+    background-color: var(--color-texta);
+} */
+
+/* 점선이 들어갈 ::after(pseudo)요소 만들고 크기값 설정해주기*/
+/* .gnb li a:hover::after {
+    width: calc(100% - 2rem);
+    height: 3px;
+    background-size: contain; /* 배경 이미지(svg)가 알맞게 들어가도록*/
+  
+/* hover된 링크의 글자 색상 정의(하얀색)*/
+/* .hovered-link 선택자명은 추후 JS로 추가할 예정!*/
+  /* .hovered-link {
+      color: var(--color-textb) !important;
+  } */
+/* .gnb li a:hover::after의 svg에 배경이미지 지정!*/
+  /* .hovered-link::after {
+      background-image: url("../img/white_dot.svg");
+  } */
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 213, 0);
+}
+
+
+html{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#wrap{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-size: 130px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    font-family: Impact;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.sub_contents{
+    margin: 0px 10%;
+    color: white;
+    font-size: 25px;
+}
+
+.content:nth-of-type(1){
+    background-color: rgb(31, 133, 255);
+}
+.content:nth-of-type(2){
+    background-color: rgb(255, 213, 0);
+}
+.content:nth-of-type(3){
+    background-color: rgb(255, 213, 0);
+}
+.content:nth-of-type(4){
+    background-color: rgb(255, 213, 0);
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    color:  white;
+    font-size: 30px;
+    font-family: 'Arial Narrow Bold';
+    background-color: rgb(21, 97, 203);
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    padding-top: 0px;
+
+}
+
+ul li{
+    width: auto;
+    margin: 0px 50px;
+    font-style: none;
+}
+
+ul li:nth-of-type(2){
+    margin-left: 10%;
+}
+
+/* 첫 번째 페이지 구성*/
+#welcome{
+    font-size: 200px;
+    font-family: 'arial';
+    text-align: center;
+}
+
+/* 두 번째 페이지 구성 */
+b{
+    font-size: 45px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    color: white;
+    letter-spacing: -3px;
+}
+#about{
+    position: absolute;
+    top: 1080px;
+}
+
+#about img{
+    width: 300px;
+    height: 400px;
+}
+
+#blank{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+}
+
+#education{
+    position: relative;
+    left: 600px;
+    top: -100px;
+}
+
+#experience{
+    position: relative;
+    left: 1100px;
+    top: -345px;
+}
+
+#experience p{
+    line-height: 15px;
+}
+
+#skill{
+    position: relative;
+    top: -200px;
+    left: 600px;
+}
+
+#skill div{
+    display: flex;
+}
+
+#skill p{
+    line-height: 15px;
+}
+
+#skill_bar{
+    position: absolute;
+    top: 1515px;
+    left: 1000px;
+}
+
+.progressbar{
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+    overflow:hidden;
+    background: #fff;
+    position:relative;
+    margin-top: 20px;
+  }
+.progressbar::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    height: 20px;
+    width:0;
+    line-height: 15px;
+    text-align: right;
+    background-color:rgb(0, 149, 255);
+}
+.progressbar:nth-of-type(1):after{
+    content:'90%';
+    animation: Photoshop 5s ease forwards;
+}
+.progressbar:nth-of-type(2):after{
+    content:'80%';
+    animation: Illustrator 5s ease forwards;
+}
+.progressbar:nth-of-type(3):after{
+    content:'90%';
+    animation: Primere 5s ease forwards;
+}
+.progressbar:nth-of-type(4):after{
+    content:'90%';
+    animation: After 5s ease forwards;
+}
+.progressbar:nth-of-type(5):after{
+    content:'80%';
+    animation: Exell 5s ease forwards;
+}
+.progressbar:nth-of-type(6):after{
+    content:'70%';
+    animation: PPT 5s ease forwards;
+}
+@keyframes Photoshop{
+  0%{width: 0px}
+  100%{width: 90%;}
+}
+
+@keyframes Illustrator{
+    0%{width: 0px}
+    100%{width: 80%;}
+}
+@keyframes Primere{
+    0%{width: 0px}
+    100%{width: 90%;}
+}
+@keyframes After{
+    0%{width: 0px}
+    100%{width: 90%;}
+}
+@keyframes Exell{
+    0%{width: 0px}
+    100%{width: 80%;}
+}
+@keyframes PPT{
+    0%{width: 0px}
+    100%{width: 70%;}
+}
+
+.progress{
+    position: relative;
+    top:0;
+    right:0;
+    z-index:99;
+  }
+
+
+/* 세 번째 페이지 구성 */
+#third_1{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+    top: 150px;
+}
+
+#third_1 p{
+    color: black;
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#third_2{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    left: 30px;
+    top: -500px;
+}
+
+#third_2 p{
+    color: white;
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+/* 팝업 스타일링 */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 팝업 배경색 및 투명도 조절 */
+    z-index: 9999;
+  }
+
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 그림자 효과 추가 */
+  }
+
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  /* 스크롤을 막기 위한 스타일 */
+  body.popup-open {
+    overflow: hidden;
+  }
+
+
+/* 네 번째 페이지 구성 */
+
+.content:nth-of-type(4) p{
+    color: white;
+    font-size: 45px;
+    margin-left: 800px;
+}
+
+.content:nth-of-type(4) p:nth-of-type(3){
+    color: white;
+    font-size: 25px;
+    margin-left: 15%;
+    margin-top: 350px;
+}
+
+.content:nth-of-type(4) > h1:nth-of-type(2){
+    color: white;
+    font-size: 60px;
+    position: relative;
+    top: 330px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#kakao{
+    width: 450px;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    top: 3050px;
+}
+
