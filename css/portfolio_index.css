@@ -143,6 +143,7 @@ ul li{
     font-style: none;
 }
 
+
 ul li:nth-of-type(2){
     margin-left: 10%;
 }
@@ -152,6 +153,7 @@ ul li:nth-of-type(2){
     font-size: 200px;
     font-family: 'arial';
     text-align: center;
+    padding: 8% 0px;
 }
 
 /* 두 번째 페이지 구성 */
@@ -162,9 +164,14 @@ b{
     color: white;
     letter-spacing: -3px;
 }
-#about{
+content:nth-of-type(2) {
     position: absolute;
     top: 1080px;
+}
+
+#about{
+    margin-top: -5%;
+    margin-left: 3%;
 }
 
 #about img{
@@ -180,14 +187,14 @@ b{
 
 #education{
     position: relative;
-    left: 600px;
-    top: -100px;
+    left: 38%;
+    top: -690px;
 }
 
 #experience{
     position: relative;
-    left: 1100px;
-    top: -345px;
+    left: 75%;
+    top: -930px;
 }
 
 #experience p{
@@ -196,8 +203,8 @@ b{
 
 #skill{
     position: relative;
-    top: -200px;
-    left: 600px;
+    top: -700px;
+    left: 38%;
 }
 
 #skill div{
@@ -209,9 +216,9 @@ b{
 }
 
 #skill_bar{
-    position: absolute;
-    top: 1515px;
-    left: 1000px;
+    position: relative;
+    top: -938px;
+    left: 50%;
 }
 
 .progressbar{
@@ -369,30 +376,34 @@ b{
 .content:nth-of-type(4) p{
     color: white;
     font-size: 45px;
-    margin-left: 800px;
+}
+
+.content:nth-of-type(4) > p:nth-of-type(1){
+    position: relative;
+    left: 40%;
+    top: -450px;
+}
+
+.content:nth-of-type(4) > p:nth-of-type(2){
+    position: relative;
+    left: 40%;
+    top: -450px;
+
 }
 
 .content:nth-of-type(4) p:nth-of-type(3){
-    color: white;
+    text-align: center;
+    margin: 0px auto;
     font-size: 25px;
-    margin-left: 15%;
-    margin-top: 350px;
+
 }
 
-.content:nth-of-type(4) > h1:nth-of-type(2){
-    color: white;
-    font-size: 60px;
-    position: relative;
-    top: 330px;
-    margin: 0px;
-    padding: 0px;
-}
 
 #kakao{
-    width: 450px;
+    width: 20%;
     height: auto;
-    position: absolute;
+    position: relative;
     left: 10%;
-    top: 3050px;
+    top: 0px;
 }
 
