@@ -7,6 +7,7 @@
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 
@@ -348,6 +349,7 @@ aside div{
     height: 30px;
     border: 3px white solid;
 }
+
 
 #news p, table{
     margin: 0px;

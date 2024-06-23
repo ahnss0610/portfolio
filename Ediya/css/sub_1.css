@@ -2,6 +2,7 @@
 /* 공통사항 */
 a{
     text-decoration: none;
+    color: black;
 }
 
 
@@ -109,10 +110,11 @@ main div{
 main .btn p{
     width: 180px;
     border: 1px white   solid;
-    padding: 7px 0px
+    padding: 7px 0px;
+    color: white;
 }
 
-main .btn p:hover{
+main .btn a p:hover{
     background-color: white;
     color: black;
 }
